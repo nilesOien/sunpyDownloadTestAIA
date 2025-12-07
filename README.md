@@ -6,7 +6,7 @@ the sunpy AIA downloads as documented at
 location.
 
 Assuming you use uv, use the installSunpy.sh script to
-install the required paython packages. You can then run
+install the required Python packages. You can then run
 the tests by running runTest.sh in cron (there are comments
 in that script that may be helpful).
 
