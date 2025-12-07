@@ -1,0 +1,7 @@
+__pycache__
+pyproject.toml
+runTest.log
+uv.lock
+data
+.venv
+failureTimes.txt
