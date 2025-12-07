@@ -1,0 +1,10 @@
+[project]
+name = "uv-example"
+version = "0.1.0"
+description = "Sunpy test for Stuart"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=9.0.2",
+    "ruff>=0.14.8",
+    "sunpy[all]>=7.0.4",
+]
