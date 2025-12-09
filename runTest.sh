@@ -19,7 +19,7 @@ uv run pytest
 status="$?"
 if [ "$status" -ne 0 ]
 then
- date +"%Y/%m/%d %H:%M:%S %Z" >> failureTimes.txt 
+ date --utc +"%Y/%m/%d %H:%M:%S %Z" >> failureTimes.txt 
 fi
 
 exit 0
