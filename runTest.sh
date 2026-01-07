@@ -15,12 +15,16 @@ cd $HOME/sunpyDownloadTestAIA
 # Just so it finds uv
 export PATH="$PATH":"$HOME"/.local/bin
 
+startTm=`date --utc +"%Y/%m/%d %H:%M:%S %Z"`
+
 uv run pytest
 status="$?"
 if [ "$status" -ne 0 ]
 then
  date --utc +"%Y/%m/%d %H:%M:%S %Z" >> failureTimes.txt 
 fi
+
+echo "$startTm", "$status" >> testResults.txt
 
 exit 0
 
